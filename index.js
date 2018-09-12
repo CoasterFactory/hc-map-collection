@@ -2,8 +2,12 @@
 
 import usaAndCanada from './usa-and-canada'
 
-console.log(usaAndCanada)
-
-export default {
+var hcMaps = {
   'custom/usa-and-canada': usaAndCanada
+}
+
+console.log('hcMaps', hcMaps)
+
+export default function (Highcharts, maps) {
+  console.log('hc-map-collection', Highcharts, maps)
 }
